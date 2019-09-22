@@ -42,6 +42,7 @@
   }
   .carousel-caption h3 {
     color: #fff !important;
+	font-family: initial;
   }
   @media (max-width: 600px) {
     .carousel-caption {
@@ -166,6 +167,9 @@
   
   height:200px !important;
   }
+  .logo{
+  height: 20px;
+  }
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -178,23 +182,26 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
+      <a class="navbar-brand" href="#myPage"><img class="logo" src="logo2.jpg"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#myPage">HOME</a></li>
-        <li><a href="#band">BAND</a></li>
-        <li><a href="#tour">TOUR</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+<!--         <li><a href="#band">BAND</a></li>
+        <li><a href="#tour">TOUR</a></li> -->
+		        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">VENDORS
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Merchandise</a></li>
-            <li><a href="#">Extras</a></li>
-            <li><a href="#">Media</a></li> 
+            <li><a href="#">Sri Sai</a></li>
+            <li><a href="#">Palkhi</a></li>
+            <li><a href="#">Green Nest</a></li> 
+			<li><a href="#">Cafe Coffe Day</a></li> 
+			<li><a href="#">Cochin Bakery</a></li> 
           </ul>
         </li>
+        <li><a href="#contact">CONTACT</a></li>
+
         <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
       </ul>
     </div>
@@ -339,24 +346,24 @@
         <div class="thumbnail">
           <img class="specialFood" src="chicken-cashew.jpg" alt="Paris" width="400">
           <p><strong>Chicken Mughlai</strong></p>
-          <p>Friday 27 November 2015</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+          <p>Mughlai Chicken is a restaurant style, north Indian recipe with a creamy, dark brown onion gravy that will have you licking the plate</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Order Now</button>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="thumbnail">
           <img class="specialFood" src="panner.jpg" alt="New York" width="400">
-          <p><strong>New York</strong></p>
-          <p>Saturday 28 November 2015</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+          <p><strong>Panner Tikka Masala</strong></p>
+          <p>Paneer tikka masala is an Indian dish of marinated paneer cheese served in a spiced gravy. It is a vegetarian alternative to chicken tikka masala.</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Order Now</button>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="thumbnail">
           <img class="specialFood" src="salad1.jpg" alt="San Francisco" width="400">
-          <p><strong>San Francisco</strong></p>
-          <p>Sunday 29 November 2015</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+          <p><strong>Green Salad</strong></p>
+          <p>Fresh green salad recipe featuring sliced apple, toasted pepitas, dried cranberries and crumbled goat cheese. Apple cider vinaigrette recipe included.</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Order Now</button>
         </div>
       </div>
     </div>
@@ -364,10 +371,10 @@
   
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
+    <!-- div class="modal-dialog">
     
       <!-- Modal content-->
-      <div class="modal-content">
+     <!--  <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">×</button>
           <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
@@ -394,9 +401,9 @@
           <p>Need <a href="#">help?</a></p>
         </div>
       </div>
-    </div>
+    </div>  -->
   </div>
-</div> -->
+</div> 
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container">
@@ -431,22 +438,22 @@
   <br>
   <h3 class="text-center">From The Blog</h3>  
   <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home">Mike</a></li>
-    <li><a data-toggle="tab" href="#menu1">Chandler</a></li>
-    <li><a data-toggle="tab" href="#menu2">Peter</a></li>
+    <li class="active"><a data-toggle="tab" href="#home">Sugam</a></li>
+    <li><a data-toggle="tab" href="#menu1">Sudeep</a></li>
+    <li><a data-toggle="tab" href="#menu2">Dinesh</a></li>
   </ul>
 
   <div class="tab-content">
     <div id="home" class="tab-pane fade in active">
-      <h2>Mike Ross, Manager</h2>
+      <h2>Sugam Shetty</h2>
       <p>Man, we've been on the road for some time now. Looking forward to lorem ipsum.</p>
     </div>
     <div id="menu1" class="tab-pane fade">
-      <h2>Chandler Bing, Guitarist</h2>
+      <h2>Sudeep P</h2>
       <p>Always a pleasure people! Hope you enjoyed it as much as I did. Could I BE.. any more pleased?</p>
     </div>
     <div id="menu2" class="tab-pane fade">
-      <h2>Peter Griffin, Bass player</h2>
+      <h2>Dinesh Chandra</h2>
       <p>I mean, sometimes I enjoy the show, but other times I enjoy other things.</p>
     </div>
   </div>
@@ -460,7 +467,7 @@
   <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p> 
+ 
 </footer>
 
 <script>
